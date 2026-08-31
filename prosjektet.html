@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Om prosjektet – Adventsaksjonen [Navn på menighet/gruppe]</title>
+  <meta name="description" content="Les om årets prosjekt i Adventsaksjonen – hva pengene går til, og hvordan din gave gjør en forskjell." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ==========================================================
+       HEADER / TOPPMENY
+       Denne menyen er lik på alle sider. Hvis du legger til en
+       ny side, kopier denne <header>-blokken inn der også, og
+       husk å endre "aria-current" til riktig side.
+  =========================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <rect x="11" y="12" width="6" height="13" rx="2" fill="#9FB3CC" opacity="0.35" />
+          <g transform="translate(14,12)"><path class="flame flame--1" d="M0,0 C4,-7 5,-15 0,-22 C-5,-15 -4,-7 0,0 Z" fill="#E3A857" /></g>
+        </svg>
+        Adventsaksjonen <span>2026</span>
+      </a>
+
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="index.html" aria-current="page">Hjem</a></li>
+          <li><a href="prosjektet.html">Om prosjektet</a></li>
+          <li><a href="organisasjonen.html">Om organisasjonen</a></li>
+          <li><a href="om-oss.html">Om oss</a></li>
+        </ul>
+
+        <button class="nav-toggle" aria-label="Åpne meny" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SIDE-HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <p class="eyebrow">Adventsaksjonen [år]</p>
+      <h1>Om prosjektet</h1>
+      <p>
+        Her kan du lese hva pengene fra årets aksjon går til, hvordan
+        prosjektet er valgt, og hvilken forskjell din gave gjør.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       ÅRETS PROSJEKT
+       BYTT UT: tittel, bilde og beskrivelse av prosjektet.
+       Legg eget bilde i mappen "images" og bytt ut src under.
+  =========================================================== -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="grid grid--2" style="align-items: center;">
+        <div>
+          <p class="eyebrow">Årets prosjekt</p>
+          <h2>[Navn på prosjektet]</h2>
+          <p>
+            [Beskriv prosjektet her: Hva handler det om? Hvor i verden
+            (eller lokalt) skjer det? Hvem er det til hjelp for? Hvorfor er
+            dette prosjektet valgt i år?]
+          </p>
+          <p>
+            [Legg gjerne til et konkret eksempel eller en historie som
+            gjør prosjektet lettere å forstå og kjenne på.]
+          </p>
+        </div>
+
+        <!-- Bilde-placeholder. Bytt ut med <img src="images/prosjekt.jpg" alt="..."> -->
+        <div class="person-photo" style="aspect-ratio: 4 / 3;">
+          Bilde av prosjektet<br />(legg i mappen «images»)
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       HVOR GÅR PENGENE
+       BYTT UT: tall og forklaringer for hver post.
+  =========================================================== -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Hvor går pengene</p>
+        <h2>Slik brukes gaven din</h2>
+        <p>
+          Organisasjonen bak Adventsaksjonen sørger for at innsamlede
+          midler kommer fram dit de trengs mest. Her er et eksempel på
+          hvordan en gave kan komme til nytte.
+        </p>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="card">
+          <h3>[Beløp, f.eks. 100 kr]</h3>
+          <p>[Forklar hva dette beløpet kan dekke i prosjektet, f.eks. skolemateriell til ett barn i en måned.]</p>
+        </div>
+        <div class="card">
+          <h3>[Beløp, f.eks. 500 kr]</h3>
+          <p>[Forklar hva dette beløpet kan dekke, f.eks. rent vann til en familie i en uke.]</p>
+        </div>
+        <div class="card">
+          <h3>[Beløp, f.eks. 1000 kr]</h3>
+          <p>[Forklar hva dette beløpet kan dekke, f.eks. opplæring for en lokal frivillig.]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       VEIEN FRA GAVE TIL VIRKNING (tidslinje)
+       BYTT UT: tekst i hvert trinn slik det passer for ditt prosjekt.
+  =========================================================== -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Hvordan det skjer</p>
+        <h2>Veien fra gave til virkning</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline-item">
+          <h3>1. Du gir en gave</h3>
+          <p>
+            Via konfirmantene som kommer på besøk, eller digitalt via
+            Vipps og bank – se forsiden for detaljer.
+          </p>
+        </li>
+        <li class="timeline-item">
+          <h3>2. Pengene samles inn lokalt</h3>
+          <p>
+            [Navn på menighet/gruppe] samler sammen alle gavene fra
+            aksjonen i [kommune/bydel].
+          </p>
+        </li>
+        <li class="timeline-item">
+          <h3>3. Midlene overføres til [organisasjon]</h3>
+          <p>
+            Pengene sendes videre til organisasjonen, som koordinerer
+            prosjektet og samarbeider med lokale partnere.
+          </p>
+        </li>
+        <li class="timeline-item">
+          <h3>4. Prosjektet settes i gang</h3>
+          <p>
+            [Beskriv kort hva som skjer i selve prosjektet – hvem som
+            gjennomfører det, og hva pengene brukes til i praksis.]
+          </p>
+        </li>
+        <li class="timeline-item">
+          <h3>5. Vi følger opp og rapporterer</h3>
+          <p>
+            I etterkant deler vi gjerne resultater og historier fra
+            prosjektet, slik at alle som har gitt kan se hva bidraget
+            deres har vært med på å skape.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       FOOTER – kontaktinfo og lenker
+       BYTT UT: e-post, adresse, telefon og sosiale medier.
+  =========================================================== -->
+<footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Adventsaksjonen</h3>
+          <p>
+            En årlig innsamlingsaksjon i regi av Norges Unge Katolikker,
+            til støtte for Human Friends Organization sitt arbeid mot forfølgelse av kristne i Pakistan.
+          </p>
+          <div class="footer-candles">
+            <svg viewBox="0 0 140 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <line x1="5" y1="64" x2="135" y2="64" stroke="#3A4D6B" stroke-width="1.5" />
+              <g>
+                <rect x="14" y="34" width="14" height="30" rx="3" fill="#2A3C5A" />
+                <g transform="translate(21,34)"><path class="flame flame--1" d="M0,0 C3.5,-6 4,-13 0,-19 C-4,-13 -3.5,-6 0,0 Z" fill="#E3A857" /></g>
+              </g>
+              <g>
+                <rect x="44" y="26" width="14" height="38" rx="3" fill="#2A3C5A" />
+                <g transform="translate(51,26)"><path class="flame flame--2" d="M0,0 C3.5,-6 4,-13 0,-19 C-4,-13 -3.5,-6 0,0 Z" fill="#D2643B" /></g>
+              </g>
+              <g>
+                <rect x="74" y="22" width="14" height="42" rx="3" fill="#2A3C5A" />
+                <g transform="translate(81,22)"><path class="flame flame--3" d="M0,0 C3.5,-6 4,-13 0,-19 C-4,-13 -3.5,-6 0,0 Z" fill="#E3A857" /></g>
+              </g>
+              <g>
+                <rect x="104" y="30" width="14" height="34" rx="3" fill="#2A3C5A" />
+                <g transform="translate(111,30)"><path class="flame flame--4" d="M0,0 C3.5,-6 4,-13 0,-19 C-4,-13 -3.5,-6 0,0 Z" fill="#D2643B" /></g>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <div>
+          <h3>Sidekart</h3>
+          <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="prosjektet.html">Om prosjektet</a></li>
+            <li><a href="organisasjonen.html">Om organisasjonen</a></li>
+            <li><a href="om-oss.html">Om oss</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Kontakt</h3>
+          <ul>
+            <li>E-post: <a href="mailto:kut@nuk.no">kut@nuk.no</a></li>
+            <li>Telefon: 23 21 95 40</li>
+            <li>Post: Akersveien 16A, 0177 Oslo</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Adventsaksjonen</p>
+        <p>Laget med ❤ for Adventsaksjonen</p> 
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

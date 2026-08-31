@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adventsaksjonen [Navn på menighet/gruppe] – Hjem</title>
+  <meta name="description" content="Bli med på årets Adventsaksjon. Her finner du informasjon om prosjektet, organisasjonen bak og oss som gjennomfører aksjonen." />
+
+  <!-- Skrifttyper fra Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Vårt eget stilark -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ==========================================================
+       HEADER / TOPPMENY
+       Denne menyen er lik på alle sider. Hvis du legger til en
+       ny side, kopier denne <header>-blokken inn der også, og
+       husk å endre "aria-current" til riktig side.
+  =========================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <rect x="11" y="12" width="6" height="13" rx="2" fill="#9FB3CC" opacity="0.35" />
+          <g transform="translate(14,12)"><path class="flame flame--1" d="M0,0 C4,-7 5,-15 0,-22 C-5,-15 -4,-7 0,0 Z" fill="#E3A857" /></g>
+        </svg>
+        Adventsaksjonen <span>2026</span>
+      </a>
+
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="index.html" aria-current="page">Hjem</a></li>
+          <li><a href="prosjektet.html">Om prosjektet</a></li>
+          <li><a href="organisasjonen.html">Om organisasjonen</a></li>
+          <li><a href="om-oss.html">Om oss</a></li>
+        </ul>
+
+        <button class="nav-toggle" aria-label="Åpne meny" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================
+       HERO – det første folk ser
+       BYTT UT: tittel, ingress-tekst og "Adventsaksjonen [år]"
+  =========================================================== -->
+  <section class="hero">
+    <div class="container">
+      <div>
+        <p class="eyebrow">Adventsaksjonen 2026</p>
+        <h1>Sammen tenner vi lys for andre</h1>
+        <p>
+          Hvert år går konfirmanter og frivillige fra [navn på menighet/gruppe]
+          fra dør til dør for å samle inn penger til mennesker som trenger det
+          mest. Pengene går uavkortet til årets prosjekt, og hver krone gjør
+          en forskjell.
+        </p>
+        <div class="btn-row">
+          <a href="prosjektet.html" class="btn btn--primary">Les om årets prosjekt</a>
+          <a href="#gi" class="btn btn--outline">Slik gir du en gave</a>
+        </div>
+      </div>
+
+      <!-- Illustrasjon: fire adventslys, ett er tent -->
+      <svg class="hero-art" viewBox="0 0 480 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrasjon av fire adventslys, der ett lys er tent">
+        <defs>
+          <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+            <stop offset="0%" stop-color="#E3A857" stop-opacity="0.35" />
+            <stop offset="100%" stop-color="#E3A857" stop-opacity="0" />
+          </radialGradient>
+        </defs>
+
+        <circle cx="240" cy="170" r="220" fill="url(#glow)" />
+
+        <!-- Hylle -->
+        <line x1="40" y1="360" x2="440" y2="360" stroke="#3A4D6B" stroke-width="2" />
+
+        <!-- Lys 1 -->
+        <g>
+          <rect x="80" y="200" width="34" height="160" rx="6" fill="#2A3C5A" />
+          <rect x="80" y="200" width="34" height="8" rx="3" fill="#F6EFE3" opacity="0.25" />
+          <g transform="translate(97,200)"><path class="flame flame--1" d="M0,0 C6,-10 7,-22 0,-32 C-7,-22 -6,-10 0,0 Z" fill="#E3A857" /></g>
+        </g>
+
+        <!-- Lys 2 -->
+        <g>
+          <rect x="166" y="180" width="34" height="180" rx="6" fill="#2A3C5A" />
+          <rect x="166" y="180" width="34" height="8" rx="3" fill="#F6EFE3" opacity="0.25" />
+          <g transform="translate(183,180)"><path class="flame flame--2" d="M0,0 C6,-10 7,-22 0,-32 C-7,-22 -6,-10 0,0 Z" fill="#D2643B" /></g>
+        </g>
+
+        <!-- Lys 3 (det tente lyset, med litt ekstra glød) -->
+        <g>
+          <circle cx="270" cy="120" r="45" fill="url(#glow)" />
+          <rect x="252" y="170" width="34" height="190" rx="6" fill="#2A3C5A" />
+          <rect x="252" y="170" width="34" height="8" rx="3" fill="#F6EFE3" opacity="0.25" />
+          <g transform="translate(269,170)"><path class="flame flame--3" d="M0,0 C7,-12 8,-26 0,-38 C-8,-26 -7,-12 0,0 Z" fill="#E3A857" /></g>
+        </g>
+
+        <!-- Lys 4 -->
+        <g>
+          <rect x="338" y="190" width="34" height="170" rx="6" fill="#2A3C5A" />
+          <rect x="338" y="190" width="34" height="8" rx="3" fill="#F6EFE3" opacity="0.25" />
+          <g transform="translate(355,190)"><path class="flame flame--4" d="M0,0 C6,-10 7,-22 0,-32 C-7,-22 -6,-10 0,0 Z" fill="#D2643B" /></g>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       HVA ER ADVENTSAKSJONEN – tre korte punkter
+       BYTT UT teksten i hvert <div class="card"> med eget innhold.
+  =========================================================== -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Hva er Adventsaksjonen?</p>
+        <h2>En aksjon, mange som bidrar</h2>
+        <p>
+          Adventsaksjonen er en årlig innsamlingsaksjon i adventstiden, der
+          konfirmanter og frivillige samler inn penger til et veldedig
+          prosjekt. Her er litt om hvordan det fungerer.
+        </p>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 8a6 6 0 0 1 12 0c0 4 1.5 5 1.5 5H4.5S6 12 6 8Z" />
+            <path d="M10 19a2 2 0 0 0 4 0" />
+          </svg>
+          <h3>Vi går fra dør til dør</h3>
+          <p>
+            I løpet av adventstiden besøker konfirmanter og frivillige
+            husstander i [kommune/bydel] for å informere om aksjonen og
+            samle inn gaver.
+          </p>
+        </div>
+
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 20s-7-4.4-9.2-9C1.4 8 3 4.5 6.5 4.5 9 4.5 11 6.5 12 8c1-1.5 3-3.5 5.5-3.5C21 4.5 22.6 8 21.2 11 19 15.6 12 20 12 20Z" />
+          </svg>
+          <h3>Pengene går til prosjektet</h3>
+          <p>
+            Alt som samles inn går til årets prosjekt, i regi av
+            organisasjonen bak aksjonen. Du kan lese mer om hvor pengene
+            går på siden «Om prosjektet».
+          </p>
+        </div>
+
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" />
+            <path d="M3 12h18M12 3c2.5 2.7 4 6 4 9s-1.5 6.3-4 9c-2.5-2.7-4-6-4-9s1.5-6.3 4-9Z" />
+          </svg>
+          <h3>Du kan gi når som helst</h3>
+          <p>
+            Var ingen hjemme da vi kom på besøk? Ingen problem – du kan
+            fortsatt gi en gave digitalt. Se hvordan litt lenger ned på
+            siden.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       GI EN GAVE – Vipps / kontonummer
+       BYTT UT: Vipps-nummer, kontonummer og merkingstekst.
+  =========================================================== -->
+  <section class="section section--dark" id="gi">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Bli med</p>
+        <h2>Slik gir du en gave</h2>
+        <p>
+          Du kan støtte årets aksjon når som helst! Adventsaksjonen er godkjent av Innsamlingskontrollen og har ingen betalte annsatte. 
+          Alle gaver, store og små, går til årets prosjekt.
+        </p>
+      </div>
+
+      <div class="donate-box">
+        <h3>Gi en gave via Vipps eller bank</h3>
+        <dl>
+          <dt>Vipps</dt>
+          <dd>#19016 – Norges Unge Katolikker</dd>
+
+          <dt>Kontonummer</dt>
+          <dd>3000.16.91410</dd>
+
+          <dt>Merk gaven med</dt>
+          <dd>«Adventsaksjonen 2026»</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       FOOTER – kontaktinfo og lenker
+       BYTT UT: e-post, adresse, telefon og sosiale medier.
+  =========================================================== -->
+<footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Adventsaksjonen</h3>
+          <p>
+            En årlig innsamlingsaksjon i regi av Norges Unge Katolikker,
+            til støtte for Human Friends Organization sitt arbeid mot forfølgelse av kristne i Pakistan.
+          </p>
+          <div class="footer-candles">
+            <svg viewBox="0 0 140 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <line x1="5" y1="64" x2="135" y2="64" stroke="#3A4D6B" stroke-width="1.5" />
+              <g>
+                <rect x="14" y="34" width="14" height="30" rx="3" fill="#2A3C5A" />
+                <g transform="translate(21,34)"><path class="flame flame--1" d="M0,0 C3.5,-6 4,-13 0,-19 C-4,-13 -3.5,-6 0,0 Z" fill="#E3A857" /></g>
+              </g>
+              <g>
+                <rect x="44" y="26" width="14" height="38" rx="3" fill="#2A3C5A" />
+                <g transform="translate(51,26)"><path class="flame flame--2" d="M0,0 C3.5,-6 4,-13 0,-19 C-4,-13 -3.5,-6 0,0 Z" fill="#D2643B" /></g>
+              </g>
+              <g>
+                <rect x="74" y="22" width="14" height="42" rx="3" fill="#2A3C5A" />
+                <g transform="translate(81,22)"><path class="flame flame--3" d="M0,0 C3.5,-6 4,-13 0,-19 C-4,-13 -3.5,-6 0,0 Z" fill="#E3A857" /></g>
+              </g>
+              <g>
+                <rect x="104" y="30" width="14" height="34" rx="3" fill="#2A3C5A" />
+                <g transform="translate(111,30)"><path class="flame flame--4" d="M0,0 C3.5,-6 4,-13 0,-19 C-4,-13 -3.5,-6 0,0 Z" fill="#D2643B" /></g>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <div>
+          <h3>Sidekart</h3>
+          <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="prosjektet.html">Om prosjektet</a></li>
+            <li><a href="organisasjonen.html">Om organisasjonen</a></li>
+            <li><a href="om-oss.html">Om oss</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Kontakt</h3>
+          <ul>
+            <li>E-post: <a href="mailto:kut@nuk.no">kut@nuk.no</a></li>
+            <li>Telefon: 23 21 95 40</li>
+            <li>Post: Akersveien 16A, 0177 Oslo</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Adventsaksjonen</p>
+        <p>Laget med ❤ for Adventsaksjonen</p> 
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

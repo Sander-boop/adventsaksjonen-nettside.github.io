@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Om organisasjonen – Adventsaksjonen [Navn på menighet/gruppe]</title>
+  <meta name="description" content="Les om organisasjonen som står bak prosjektet i årets Adventsaksjon – hva de jobber med og hvorfor." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ==========================================================
+       HEADER / TOPPMENY
+       Denne menyen er lik på alle sider. Hvis du legger til en
+       ny side, kopier denne <header>-blokken inn der også, og
+       husk å endre "aria-current" til riktig side.
+  =========================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <rect x="11" y="12" width="6" height="13" rx="2" fill="#9FB3CC" opacity="0.35" />
+          <g transform="translate(14,12)"><path class="flame flame--1" d="M0,0 C4,-7 5,-15 0,-22 C-5,-15 -4,-7 0,0 Z" fill="#E3A857" /></g>
+        </svg>
+        Adventsaksjonen <span>2026</span>
+      </a>
+
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="index.html" aria-current="page">Hjem</a></li>
+          <li><a href="prosjektet.html">Om prosjektet</a></li>
+          <li><a href="organisasjonen.html">Om organisasjonen</a></li>
+          <li><a href="om-oss.html">Om oss</a></li>
+        </ul>
+
+        <button class="nav-toggle" aria-label="Åpne meny" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SIDE-HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <p class="eyebrow">Samarbeidspartner</p>
+      <h1>Om organisasjonen</h1>
+      <p>
+        Adventsaksjonen samler inn penger til [navn på organisasjon]. Her
+        kan du lese mer om hvem de er, hva de jobber med, og hvordan de
+        bruker pengene som samles inn.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       HVEM ER ORGANISASJONEN
+       BYTT UT: navn, historie og beskrivelse.
+  =========================================================== -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="grid grid--2" style="align-items: center;">
+        <!-- Bilde-placeholder. Bytt ut med <img src="images/organisasjon.jpg" alt="..."> -->
+        <div class="person-photo" style="aspect-ratio: 4 / 3;">
+          Bilde eller logo<br />(legg i mappen «images»)
+        </div>
+
+        <div>
+          <p class="eyebrow">Om [navn på organisasjon]</p>
+          <h2>[Kort, fengende beskrivelse av organisasjonen]</h2>
+          <p>
+            [Skriv litt om organisasjonens historie og hva de gjør.
+            Hvor lenge har de eksistert? Hvor i verden – eller lokalt –
+            jobber de? Hvem hjelper de?]
+          </p>
+          <p>
+            [Forklar gjerne hvordan Adventsaksjonen og organisasjonen
+            samarbeider, og hvorfor dette samarbeidet er viktig for
+            [menighet/gruppe].]
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       HVA ORGANISASJONEN JOBBER MED
+       BYTT UT: tittel og tekst på hvert kort med organisasjonens
+       egne satsingsområder.
+  =========================================================== -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Satsingsområder</p>
+        <h2>Dette jobber organisasjonen med</h2>
+        <p>
+          [Navn på organisasjon] arbeider innenfor flere områder.
+          Under er noen eksempler – tilpass disse til organisasjonens
+          faktiske arbeid.
+        </p>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 21V9l9-6 9 6v12" />
+            <path d="M9 21v-6h6v6" />
+          </svg>
+          <h3>[Satsingsområde 1, f.eks. Utdanning]</h3>
+          <p>[Kort forklaring av hva organisasjonen gjør innenfor dette området, og for hvem.]</p>
+        </div>
+
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2v6M12 22v-6M4.9 4.9l4.2 4.2M19.1 19.1l-4.2-4.2M2 12h6M22 12h-6M4.9 19.1l4.2-4.2M19.1 4.9l-4.2 4.2" />
+          </svg>
+          <h3>[Satsingsområde 2, f.eks. Rent vann]</h3>
+          <p>[Kort forklaring av hva organisasjonen gjør innenfor dette området, og for hvem.]</p>
+        </div>
+
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 21c4-4 7-7.5 7-11a7 7 0 0 0-14 0c0 3.5 3 7 7 11Z" />
+            <circle cx="12" cy="10" r="2.5" />
+          </svg>
+          <h3>[Satsingsområde 3, f.eks. Beredskap]</h3>
+          <p>[Kort forklaring av hva organisasjonen gjør innenfor dette området, og for hvem.]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       VERDIER
+       BYTT UT: ordene og forklaringene med organisasjonens egne verdier.
+  =========================================================== -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Verdigrunnlag</p>
+        <h2>Hva organisasjonen står for</h2>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="card">
+          <h3>[Verdi 1]</h3>
+          <p>[Forklar kort hva denne verdien betyr i praksis for organisasjonens arbeid.]</p>
+        </div>
+        <div class="card">
+          <h3>[Verdi 2]</h3>
+          <p>[Forklar kort hva denne verdien betyr i praksis for organisasjonens arbeid.]</p>
+        </div>
+        <div class="card">
+          <h3>[Verdi 3]</h3>
+          <p>[Forklar kort hva denne verdien betyr i praksis for organisasjonens arbeid.]</p>
+        </div>
+      </div>
+
+      <p style="margin-top: 2rem;">
+        Du finner mer informasjon om [navn på organisasjon] på deres egen
+        nettside: <a href="https://example.org" target="_blank" rel="noopener">[lenke til organisasjonens nettside]</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       FOOTER – kontaktinfo og lenker
+       BYTT UT: e-post, adresse, telefon og sosiale medier.
+  =========================================================== -->
+<footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Adventsaksjonen</h3>
+          <p>
+            En årlig innsamlingsaksjon i regi av Norges Unge Katolikker,
+            til støtte for Human Friends Organization sitt arbeid mot forfølgelse av kristne i Pakistan.
+          </p>
+          <div class="footer-candles">
+            <svg viewBox="0 0 140 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <line x1="5" y1="64" x2="135" y2="64" stroke="#3A4D6B" stroke-width="1.5" />
+              <g>
+                <rect x="14" y="34" width="14" height="30" rx="3" fill="#2A3C5A" />
+                <g transform="translate(21,34)"><path class="flame flame--1" d="M0,0 C3.5,-6 4,-13 0,-19 C-4,-13 -3.5,-6 0,0 Z" fill="#E3A857" /></g>
+              </g>
+              <g>
+                <rect x="44" y="26" width="14" height="38" rx="3" fill="#2A3C5A" />
+                <g transform="translate(51,26)"><path class="flame flame--2" d="M0,0 C3.5,-6 4,-13 0,-19 C-4,-13 -3.5,-6 0,0 Z" fill="#D2643B" /></g>
+              </g>
+              <g>
+                <rect x="74" y="22" width="14" height="42" rx="3" fill="#2A3C5A" />
+                <g transform="translate(81,22)"><path class="flame flame--3" d="M0,0 C3.5,-6 4,-13 0,-19 C-4,-13 -3.5,-6 0,0 Z" fill="#E3A857" /></g>
+              </g>
+              <g>
+                <rect x="104" y="30" width="14" height="34" rx="3" fill="#2A3C5A" />
+                <g transform="translate(111,30)"><path class="flame flame--4" d="M0,0 C3.5,-6 4,-13 0,-19 C-4,-13 -3.5,-6 0,0 Z" fill="#D2643B" /></g>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <div>
+          <h3>Sidekart</h3>
+          <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="prosjektet.html">Om prosjektet</a></li>
+            <li><a href="organisasjonen.html">Om organisasjonen</a></li>
+            <li><a href="om-oss.html">Om oss</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Kontakt</h3>
+          <ul>
+            <li>E-post: <a href="mailto:kut@nuk.no">kut@nuk.no</a></li>
+            <li>Telefon: 23 21 95 40</li>
+            <li>Post: Akersveien 16A, 0177 Oslo</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Adventsaksjonen</p>
+        <p>Laget med ❤ for Adventsaksjonen</p> 
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
