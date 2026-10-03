@@ -185,6 +185,7 @@ p {
 .section--dark {
   background-color: var(--midnight);
   color: var(--cream);
+  height: auto;
 }
 
 .section--dark p {
