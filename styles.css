@@ -185,6 +185,7 @@ p {
 .section--dark {
   background-color: var(--midnight);
   color: var(--cream);
+  height: auto;
 }
 
 .section--dark p {
@@ -212,6 +213,7 @@ p {
 
 .grid--2 {
   grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
 @media (max-width: 800px) {
