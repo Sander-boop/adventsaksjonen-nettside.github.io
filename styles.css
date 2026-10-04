@@ -639,6 +639,79 @@ p {
   color: var(--mist);
 }
 
+/* --------------------------------------------------------------------------
+   14. PEOPLE SLIDER
+-------------------------------------------------------------------------- */
+.people-slider {
+  position: relative;
+}
+
+.people-track {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 0.5rem 0 1rem;
+  scrollbar-width: none;
+}
+
+.people-track::-webkit-scrollbar {
+  display: none;
+}
+
+.person-card {
+  flex: 0 0 calc((100% - 3rem) / 3);
+  scroll-snap-align: start;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  width: 44px;
+  height: 44px;
+
+  border: none;
+  border-radius: 50%;
+
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  background: var(--cream);
+  color: var(--midnight);
+}
+
+.slider-btn--left {
+  left: -22px;
+}
+
+.slider-btn--right {
+  right: -22px;
+}
+
+@media (max-width: 900px) {
+  .person-card {
+    flex: 0 0 calc((100% - 1.5rem) / 2);
+  }
+}
+
+@media (max-width: 600px) {
+  .person-card {
+    flex: 0 0 100%;
+  }
+
+  .slider-btn--left {
+    left: 5px;
+  }
+
+  .slider-btn--right {
+    right: 5px;
+  }
+}
+
 .footer-candles svg {
   width: 110px;
   height: auto;
