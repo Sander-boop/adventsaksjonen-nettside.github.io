@@ -119,65 +119,86 @@
        BYTT UT: navn, roller og bilder. Legg til eller fjern
        <div class="card person-card"> etter behov.
   =========================================================== -->
-  <section class="section section--dark">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">Kontaktpersoner</p>
-        <h2>Karitativt Utvalg</h2>
-        <p>
-          Har du spørsmål om aksjonen? Vi hjelper deg med glede!
-        </p>
-      </div>
+<section class="section section--dark">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Kontaktpersoner</p>
+      <h2>Karitativt Utvalg</h2>
+      <p>
+        Har du spørsmål om aksjonen? Vi hjelper deg med glede!
+      </p>
+    </div>
 
-      <div class="grid grid--3">
+    <div class="people-slider">
+
+      <button class="slider-btn slider-btn--left" aria-label="Forrige person">
+        &#10094;
+      </button>
+
+      <div class="people-track" id="peopleTrack">
+
         <div class="card person-card">
-          <!-- Bytt ut med <img src="images/navn.jpg" alt="Bilde av [Navn]"> -->
           <div class="person-photo">Bilde av [Navn]</div>
           <h3>Maria Ruiz Ulltveit-Moe</h3>
           <p class="person-role">Leder</p>
+
+          <h4>3 korte:</h4>
           <p>
-            <h4>3 korte: </h4>
-            Jeg heter Maria og bor for tiden i Oslo! 
-            Favoritt sang i Adoremus: 192, Jeg vil gi deg, o Herre, min lovsang 
-            Jeg engasjerer meg i KUT fordi jeg ser hvor stor forskjell vi kan utgjøre når vi jobber sammen mot et mål. 
-            Vi har alle et ansvar for de rundt oss, og KUT gir meg muligheten til å hjelpe de som trenger det mest.
-            Min nestekjærlighets emoji:🤗 
+            Jeg heter Maria og bor for tiden i Oslo!<br>
+            Favorittsang i Adoremus: 192, Jeg vil gi deg, o Herre, min lovsang.<br>
+            Jeg engasjerer meg i KUT fordi jeg ser hvor stor forskjell vi kan utgjøre når vi jobber sammen mot et mål.
+            Vi har alle et ansvar for de rundt oss, og KUT gir meg muligheten til å hjelpe de som trenger det mest.<br>
+            Min nestekjærlighets-emoji: 🤗
           </p>
         </div>
 
         <div class="card person-card">
-          <div class="person-photo"><img src="images/Clara.jpg" alt="Bilde av Clara Sander"></div>
+          <div class="person-photo">
+            <img src="images/Clara.jpg" alt="Bilde av Clara Sander">
+          </div>
+
           <h3>Clara Sander</h3>
           <p class="person-role">Utvalgsmedlem</p>
+
+          <h4>3 korte:</h4>
           <p>
-            <h4>3 korte: </h4>
-            Hei, jeg heter Clara!
-            Tusler for øyeblikket rundt i studenterbyen Trondheim!
-            Favoritt sang i Adoremus: 148, Here I am Lord
-            Jeg engasjerer meg i KUT fordi det er en daglig påminnelse for meg om å være takknemlig og å være der for de rundt meg. 
-            I tillegg er det en bonus å samarbeide med teamet her!
-            Min nestekjærlighets emoji: ❤️‍🔥
+            Hei, jeg heter Clara!<br>
+            Tusler for øyeblikket rundt i studentbyen Trondheim!<br>
+            Favorittsang i Adoremus: 148, Here I am Lord.<br>
+            Jeg engasjerer meg i KUT fordi det er en daglig påminnelse for meg om å være takknemlig og å være der for de rundt meg.
+            I tillegg er det en bonus å samarbeide med teamet her!<br>
+            Min nestekjærlighets-emoji: ❤️‍🔥
           </p>
         </div>
 
         <div class="card person-card">
           <div class="person-photo">Bilde av [Navn]</div>
+
           <h3>Tsgewayni Yacob</h3>
           <p class="person-role">Utvalgsmedlem</p>
+
+          <h4>3 korte:</h4>
           <p>
-            <h4>3 korte: </h4>
-            Jeg heter Tsgewayni og bor i Oslo.
-            Min favoritt sang i Adoremus er “Hør min bønn, Maria”
-            Jeg engasjerer meg i KUT, fordi hjertet mitt brenner stort for de som har minst og trenger mest. 
-            Som katolikker har vi et ansvar til å bidra til felleskapet, og gjennom KUT får jeg gjort akkurat det! 
-            En ekstra motivasjon er tilsendte videoer og meldinger som viser stor takknemlighet fra mennesker som har mye mindre enn oss.
-            Min nestekjærlighet-emoji er: due
+            Jeg heter Tsgewayni og bor i Oslo.<br>
+            Min favorittsang i Adoremus er «Hør min bønn, Maria».<br>
+            Jeg engasjerer meg i KUT fordi hjertet mitt brenner stort for de som har minst og trenger mest.
+            Som katolikker har vi et ansvar for å bidra til fellesskapet, og gjennom KUT får jeg gjort akkurat det!
+            En ekstra motivasjon er tilsendte videoer og meldinger som viser stor takknemlighet fra mennesker som har mye mindre enn oss.<br>
+            Min nestekjærlighets-emoji er: 🕊️
           </p>
         </div>
-      </div>
-    </div>
-  </section>
 
+        <!-- legg inn flere person-card her -->
+
+      </div>
+
+      <button class="slider-btn slider-btn--right" aria-label="Neste person">
+        &#10095;
+      </button>
+
+    </div>
+  </div>
+</section>
   <!-- ==========================================================
        BLI MED SOM FRIVILLIG
        BYTT UT: tekst og kontaktinformasjon.
@@ -269,9 +290,37 @@
     </div>
   </footer>
 
+<!-- ==========================================================
+       JAVASCRIPT FIL MED KNAPPER FOR PERSONKARUSELL
+  =========================================================== -->
   <script src="script.js"></script>
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+<script>
+  const track = document.getElementById("peopleTrack");
+  const leftBtn = document.querySelector(".slider-btn--left");
+  const rightBtn = document.querySelector(".slider-btn--right");
+
+  const scrollAmount = () => {
+    const card = track.querySelector(".person-card");
+    return card.offsetWidth + 24;
+  };
+
+  leftBtn.addEventListener("click", () => {
+    track.scrollBy({
+      left: -scrollAmount(),
+      behavior: "smooth"
+    });
+  });
+
+  rightBtn.addEventListener("click", () => {
+    track.scrollBy({
+      left: scrollAmount(),
+      behavior: "smooth"
+    });
+  });
+</script>
+
 </body>
 </html>
