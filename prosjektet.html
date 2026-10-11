@@ -90,6 +90,16 @@
       border-radius: 12px;
       display: block;
     }
+
+    .project-images figure {
+      margin: 0;
+    }
+    .project-images figcaption {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      margin-top: 0.5rem;
+    }
+
     @media (max-width: 800px) {
       .project-grid { grid-template-columns: 1fr; }
     }
@@ -162,8 +172,14 @@
         </div>
 
         <div class="project-images">
-          <img src="images/protest_lahore.jpg" alt="Markering i Lahore, Pakistan" />
-          <img src="images/jaranwala.jpg" alt="Fra Jaranwala, hvor en kristen landsby ble angrepet av en mobb i 2023" />
+          <figure>
+            <img src="images/protest_lahore.jpg" alt="Protest i Lahore, Pakistan" />
+            <figcaption>Protest i Lahore, Pakistan</figcaption>
+          </figure>
+          <figure>
+            <img src="images/jaranwala.jpg" alt="Brent kirke i Jaranwala, Pakistan" />
+            <figcaption>Brent kirke i Jaranwala, Pakistan</figcaption>
+          </figure>
         </div>
       </div>
     </div>
