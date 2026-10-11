@@ -539,30 +539,28 @@ p {
    De "flimrer" rolig med CSS-animasjon.
 -------------------------------------------------------------------------- */
 @keyframes flicker {
-  0%   { transform: scale(1, 1) rotate(0deg) skewX(0deg);              opacity: 1; }
-  14%  { transform: scale(0.96, 1.05) rotate(-1.8deg) skewX(-2deg);    opacity: 0.94; }
-  31%  { transform: scale(1.03, 0.95) rotate(1.2deg) skewX(1.5deg);    opacity: 1; }
-  47%  { transform: scale(0.97, 1.08) rotate(-0.8deg) skewX(-1deg);    opacity: 0.92; }
-  66%  { transform: scale(1.02, 0.97) rotate(1.6deg) skewX(2deg);      opacity: 1; }
-  83%  { transform: scale(0.98, 1.04) rotate(-1.2deg) skewX(-1.5deg);  opacity: 0.96; }
-  100% { transform: scale(1, 1) rotate(0deg) skewX(0deg);              opacity: 1; }
+  0%   { transform: scale(1, 1)       skewX(0deg);    opacity: 1; }
+  15%  { transform: scale(0.97, 1.04) skewX(-1.5deg); opacity: 0.95; }
+  35%  { transform: scale(1.02, 0.97) skewX(1deg);    opacity: 1; }
+  55%  { transform: scale(0.98, 1.05) skewX(-1deg);   opacity: 0.93; }
+  75%  { transform: scale(1.02, 0.98) skewX(1.5deg);  opacity: 1; }
+  100% { transform: scale(1, 1)       skewX(0deg);    opacity: 1; }
 }
 
 @keyframes flicker-b {
-  0%   { transform: scale(1, 1) rotate(0deg) skewX(0deg);              opacity: 1; }
-  18%  { transform: scale(1.03, 0.96) rotate(1.5deg) skewX(1.8deg);    opacity: 0.95; }
-  36%  { transform: scale(0.97, 1.06) rotate(-1.4deg) skewX(-1.6deg);  opacity: 1; }
-  55%  { transform: scale(1.02, 0.94) rotate(0.8deg) skewX(1deg);      opacity: 0.93; }
-  74%  { transform: scale(0.98, 1.07) rotate(-1.8deg) skewX(-2deg);    opacity: 1; }
-  100% { transform: scale(1, 1) rotate(0deg) skewX(0deg);              opacity: 1; }
+  0%   { transform: scale(1, 1)       skewX(0deg);    opacity: 1; }
+  20%  { transform: scale(1.02, 0.97) skewX(1.5deg);  opacity: 0.95; }
+  40%  { transform: scale(0.97, 1.05) skewX(-1deg);   opacity: 1; }
+  65%  { transform: scale(1.02, 0.96) skewX(1deg);    opacity: 0.94; }
+  85%  { transform: scale(0.98, 1.04) skewX(-1.5deg); opacity: 1; }
+  100% { transform: scale(1, 1)       skewX(0deg);    opacity: 1; }
 }
 
 .flame {
-  /* Viktig: regn ut origo fra selve flammen, ikke hele SVG-en */
-  transform-box: fill-box;
-  transform-origin: 50% 100%;   /* midt i bunnen av flammen */
+  /* Foten av flammen ligger i punktet 0,0 (se translate i HTML-en).
+     Da regnes all bevegelse ut fra foten, og flammen blir stående. */
+  transform-origin: 0 0;
   animation: flicker 3s ease-in-out infinite;
-  will-change: transform, opacity;
 }
 
 /* Ulikt tempo, så lysene ikke flimrer i takt */
