@@ -70,6 +70,31 @@
   <!-- ==========================================================
        ÅRETS PROSJEKT
   =========================================================== -->
+  <style>
+    /* Tekst til venstre, to bilder til høyre. Stables på mobil. */
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+    .project-images {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .project-images img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 12px;
+      display: block;
+    }
+    @media (max-width: 800px) {
+      .project-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
   <section class="section section--cream">
     <div class="container">
       <div class="section-head">
@@ -77,7 +102,7 @@
         <h2>Trosfrihet og rettferdighet for Pakistan</h2>
       </div>
 
-      <!-- Bilde i full bredde, klikk for å åpne større -->
+      <!-- Open Doors-bildet, full bredde -->
       <figure style="margin: 0 0 2rem 0;">
         <a href="images/worldwatchlist_2026.png" target="_blank" rel="noopener" aria-label="Åpne bildet i full størrelse">
           <img
@@ -86,81 +111,100 @@
             style="width: 100%; height: auto; border-radius: 12px; display: block;"
           />
         </a>
-        <figcaption style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.75rem; text-align: left;">
+        <figcaption style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.75rem;">
           Pakistan er rangert som nr. 8 på World Watch List 2026. Klikk på bildet for å se det i full størrelse.
           Kilde: <a href="https://www.opendoors.org/persecution/countries" target="_blank" rel="noopener">Open Doors</a>
         </figcaption>
       </figure>
 
-      <!-- Tekst, venstrejustert som overskriftene -->
-      <div style="max-width: 70ch;">
-        <p>
-          Pakistan er et av verdens verste land å være religiøs minoritet i.
-          Nær 97 % av innbyggerne er muslimer, og bare 3,6 % tilhører
-          religiøse minoriteter. Folketellingen i 1998 talte 2,7 millioner
-          kristne. Siden slutten av 1970-tallet har en økende islamisering av
-          rettsvesen, skole og samfunnsliv rammet minoritetene hardt.
-        </p>
-        <p>
-          Blasfemilovene, som har dødsstraff for «spott av profeten», blir
-          ofte misbrukt mot kristne. En anklage er nok til å sette liv og hjem
-          i fare. I 2023 ble en kristen landsby i Jaranwala angrepet av en
-          mobb, og over 25 kirker og 90 hus ble vandalisert eller brent.
-        </p>
-        <p>
-          Ofrene mister hjem og trygghet, og mange blir flyktninger i eget
-          land. Selv slektninger tør ofte ikke ta dem inn, fordi de selv lever
-          i fattigdom og frykter naboenes vrede. Uten fri rettshjelp får
-          sakene deres aldri behandling i rettssystemet.
-        </p>
-        <p>
-          Siden 2014 har Stefanusalliansen støttet Human Friends Organization
-          (HFO), grunnlagt av Sajid Christopher Paul. HFO gir rettshjelp,
-          traumebehandling og hjelp til å finne nytt bosted og komme tilbake i
-          arbeid. De dokumenterer også brudd på religionsfriheten og tar
-          sakene med til myndighetene i Pakistan og til det internasjonale
-          samfunnet. Du kan lese mer om Stefanusalliansen og Human Friends
-          Organization <a href="organisasjonen.html">her</a>.
-        </p>
-        <p>
-          <strong>Hjelpen når langt, men behovet er langt større. Til dette
-          ber vi om din støtte!</strong>
-        </p>
+      <!-- Tekst til venstre, bilder til høyre -->
+      <div class="project-grid">
+        <div>
+          <p>
+            Pakistan er et av verdens verste land å være religiøs minoritet i.
+            Nær 97 % av innbyggerne er muslimer, og bare 3,6 % tilhører
+            religiøse minoriteter. Folketellingen i 1998 talte 2,7 millioner
+            kristne. Siden slutten av 1970-tallet har en økende islamisering av
+            rettsvesen, skole og samfunnsliv rammet minoritetene hardt.
+          </p>
+          <p>
+            Blasfemilovene, som har dødsstraff for «spott av profeten», blir
+            ofte misbrukt mot kristne. En anklage er nok til å sette liv og hjem
+            i fare. I 2023 ble en kristen landsby i Jaranwala angrepet av en
+            mobb, og over 25 kirker og 90 hus ble vandalisert eller brent.
+          </p>
+          <p>
+            Ofrene mister hjem og trygghet, og mange blir flyktninger i eget
+            land. Selv slektninger tør ofte ikke ta dem inn, fordi de selv lever
+            i fattigdom og frykter naboenes vrede. Uten fri rettshjelp får
+            sakene deres aldri behandling i rettssystemet.
+          </p>
+          <p>
+            Siden 2014 har Stefanusalliansen støttet Human Friends Organization
+            (HFO), grunnlagt av Sajid Christopher Paul. HFO gir rettshjelp,
+            traumebehandling og hjelp til å finne nytt bosted og komme tilbake i
+            arbeid. De dokumenterer også brudd på religionsfriheten og tar
+            sakene med til myndighetene i Pakistan og til det internasjonale
+            samfunnet. Du kan lese mer om Stefanusalliansen og Human Friends
+            Organization <a href="organisasjonen.html">her</a>.
+          </p>
+          <p>
+            <strong>Hjelpen når langt, men behovet er langt større. Til dette
+            ber vi om din støtte!</strong>
+          </p>
+          <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 1.5rem;">
+            Kilder:
+            <a href="https://www.stefanus.no/hva-gjor-vi/her-arbeider-vi/pakistan" target="_blank" rel="noopener">Stefanusalliansen: Pakistan</a>,
+            <a href="https://www.stefanus.no/hva-gjor-vi/her-arbeider-vi/pakistan/prosjekt/human-friends-organization" target="_blank" rel="noopener">Hjelp til ofre for blasfemilov og tvangskonvertering</a>
+            og
+            <a href="https://www.opendoors.org/persecution/countries" target="_blank" rel="noopener">Open Doors</a>.
+          </p>
+        </div>
 
-        <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 1.5rem;">
-          Kilder:
-          <a href="https://www.stefanus.no/hva-gjor-vi/her-arbeider-vi/pakistan" target="_blank" rel="noopener">Stefanusalliansen: Pakistan</a>,
-          <a href="https://www.stefanus.no/hva-gjor-vi/her-arbeider-vi/pakistan/prosjekt/human-friends-organization" target="_blank" rel="noopener">Hjelp til ofre for blasfemilov og tvangskonvertering</a>
-          og
-          <a href="https://www.opendoors.org/persecution/countries" target="_blank" rel="noopener">Open Doors</a>.
-        </p>
+        <div class="project-images">
+          <img src="images/protest_lahore.jpg" alt="Markering i Lahore, Pakistan" />
+          <img src="images/jaranwala.jpg" alt="Fra Jaranwala, hvor en kristen landsby ble angrepet av en mobb i 2023" />
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ==========================================================
-       MÅL FOR ADVENTSAKSJONEN 2026
+       MARIA BIBI
   =========================================================== -->
   <section class="section section--dark">
     <div class="container">
       <div class="section-head">
-        <p class="eyebrow">Våre mål</p>
-        <h2>Mål for Adventsaksjonen 2026</h2>
+        <p class="eyebrow">Ett av mange ansikter</p>
+        <h2>Maria var bare 12 år</h2>
       </div>
 
-      <div class="grid grid--3">
-        <div class="card">
-          <h3>Rettshjelp</h3>
-          <p>Ofre for blasfemianklager og tvangskonvertering får fri rettshjelp.</p>
-        </div>
-        <div class="card">
-          <h3>Omsorg og gjenoppbygging</h3>
-          <p>Traumatiserte ofre og familiene deres får behandling, nytt bosted og hjelp tilbake til arbeidslivet.</p>
-        </div>
-        <div class="card">
-          <h3>Dokumentasjon</h3>
-          <p>Brudd på religionsfriheten dokumenteres og løftes frem, i Pakistan og internasjonalt.</p>
-        </div>
+      <div style="max-width: 70ch;">
+        <p>
+          Maria Bibi var 12 år da hun ble tvangsgiftet med en muslimsk mann.
+          Faren kjempet for å få henne hjem igjen, men i mars slo Pakistans
+          føderale forfatningsdomstol fast at ekteskapet er gyldig.
+        </p>
+        <p>
+          Dommerne trodde ikke på dokumentasjonen som viser hvor ung hun er.
+          De mente at hun hadde konvertert til islam og dermed lovlig var
+          under ektemannens omsorg. Sajid Christopher Paul i Human Friends
+          Organization sier at domstolen overså Marias sårbarhet, og at
+          avgjørelsen åpner for at flere jenter fra minoriteter kan bli
+          tvangsgiftet.
+        </p>
+        <p>
+          Maria er ikke alene. FN-eksperter har advart mot et mønster der
+          unge jenter fra minoriteter bortføres, tvangskonverteres og
+          tvangsgiftes, og praksisen har økt de siste årene. HFO forbereder
+          nå å ta Marias sak til Pakistans høyesterett.
+        </p>
+        <p>
+          <strong>Det er jenter som Maria årets Adventsaksjon handler om.</strong>
+        </p>
+        <p>
+          <a href="https://www.stefanus.no/aktuelt/maria-ble-tvangsgiftet-med-muslim-blir-hun-fri-til-slutt" class="btn btn--outline" target="_blank" rel="noopener">Les hele historien hos Stefanusalliansen</a>
+        </p>
       </div>
     </div>
   </section>
