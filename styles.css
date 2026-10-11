@@ -308,12 +308,11 @@ p {
 }
 
 .logo img {
-  height: 65px;
-  width: auto;
-  max-width: 220px;
-  display: block;
+  width: 300px !important;
+  height: auto !important;
+  max-width: none !important;
+  display: block !important;
   object-fit: contain;
-  border-radius: 0;
 }
 
 .nav {
