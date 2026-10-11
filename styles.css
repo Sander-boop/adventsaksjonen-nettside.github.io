@@ -310,7 +310,9 @@ p {
 .logo img {
   height: 65px;
   width: auto;
+  max-width: 220px;
   display: block;
+  object-fit: contain;
   border-radius: 0;
 }
 
