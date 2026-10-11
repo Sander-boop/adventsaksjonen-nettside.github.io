@@ -703,6 +703,10 @@ p {
     flex: 0 0 100%;
   }
 
+
+/* --------------------------------------------------------------------------
+   15. TOGGLE UTVIDER
+-------------------------------------------------------------------------- */
   .slider-btn--left {
     left: 5px;
   }
@@ -716,3 +720,115 @@ p {
   width: 110px;
   height: auto;
 }
+
+```css
+/* Introduksjon og bilde */
+.contribute-intro {
+  gap: 3rem;
+}
+
+.person-photo {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.person-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Toggle */
+.contribute-toggle {
+  margin-top: 1.5rem;
+  border-top: 1px solid #d8d0c3;
+  border-bottom: 1px solid #d8d0c3;
+}
+
+.contribute-toggle summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.2rem 0;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
+}
+
+.contribute-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.contribute-toggle summary::marker {
+  content: "";
+}
+
+/* Pil som roterer */
+.toggle-arrow {
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.25s ease;
+  margin-right: 5px;
+  margin-top: -5px;
+}
+
+.contribute-toggle[open] .toggle-arrow {
+  transform: rotate(225deg);
+  margin-top: 5px;
+}
+
+/* Fokus for tastaturbrukere */
+.contribute-toggle summary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 5px;
+  border-radius: 2px;
+}
+
+/* Det utvidede innholdet */
+.contribute-content {
+  padding: 0 0 1.5rem;
+}
+
+.contribute-item {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #e0d8cc;
+}
+
+.contribute-item:last-child {
+  border-bottom: none;
+}
+
+.contribute-item h3 {
+  margin-top: 0.3rem;
+}
+
+.contribute-item h4 {
+  margin-bottom: 0.4rem;
+}
+
+.contribute-item .eyebrow {
+  margin-bottom: 0.4rem;
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+  .contribute-intro {
+    gap: 2rem;
+  }
+
+  .person-photo {
+    order: -1;
+  }
+
+  .contribute-toggle summary {
+    padding: 1rem 0;
+  }
+}
+```
