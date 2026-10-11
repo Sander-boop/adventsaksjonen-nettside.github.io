@@ -621,12 +621,12 @@ p {
 
 .footer-logo {
   margin-top: 1.5rem;
-  max-width: 140px;
+  max-width: 100px;
 }
 
 .footer-logo img {
   display: block;
-  width: 80%;
+  width: 100%;
   height: auto;
   object-fit: contain;
 }
